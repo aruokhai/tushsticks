@@ -1,0 +1,25 @@
+<header>
+    <div class="header__inner">
+      <div>
+          <a href="/">
+            <img src="assets/images/tushsticks1.svg" class="brand_image"/>
+        </a>
+      </div>
+      <div>
+          <a (click)="changeMenuIcon()">
+            <mat-icon *ngIf="!menu">menu</mat-icon>
+            <mat-icon *ngIf="menu">menu_open</mat-icon>
+        </a>
+    </div>
+  </div>
+ 
+    <div class="cart">
+      <a>    
+          <mat-icon>shopping_cart</mat-icon>
+          <p class="center_item"><span>&nbsp;0</span>&nbsp;items</p>
+           
+      </a>
+    
+    </div>
+  </header>
+

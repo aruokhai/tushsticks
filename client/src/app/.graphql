@@ -1,0 +1,13 @@
+query getMealsByTags{
+    meals{
+        name
+        price
+        url
+    }
+}
+
+query getMealById {
+    name
+    price
+    url
+}

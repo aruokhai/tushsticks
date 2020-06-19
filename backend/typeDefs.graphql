@@ -1,0 +1,68 @@
+
+enum OrderType {
+    PICKUP
+    DELIVERY
+}
+
+enum OrderStatus {
+    ONGOING
+    SATISFIED
+    DELETED
+}
+
+type User {
+    id: ID!
+    name: String
+    email: String
+    historyOrder: [Order]
+    location: String
+}
+
+type Order {
+    id: ID!
+    meals: [Meal]
+    user: User
+    orderPrice: Int 
+    orderLocation: String
+    orderType: OrderType
+    orderStatus: OrderStatus
+}
+
+type Meal {
+    id: ID!
+    name: String
+    price: Int
+    timeToPrepare: Int
+    tags: [String]
+    url: String
+}
+
+type Query {
+    getOrder(id: ID!): Order
+    getMealWithId(id: ID): Meal
+    getMealsWithTags(tags: [String]): [Meal]
+
+}
+
+input addMealInput {
+    name:  String
+    price:  Int
+    timeToPrepare:  Int
+    tags: [String]
+    url:  String
+}
+
+input addOrderInput{
+    name: String
+    meals: [ID]
+    orderPrice: Int
+    orderLocation: String
+    timeToPrepare: Int
+    orderType: String
+
+
+}
+type Mutation{ 
+    addMeal(input: addMealInput!) : Meal
+    placeOrder(input: addOrderInput!): Order
+}

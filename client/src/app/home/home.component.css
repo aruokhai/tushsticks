@@ -1,0 +1,376 @@
+.home{
+    display: block;
+    font-size: 10px;
+    margin:0;
+    padding-top: 0.3em;
+    font-family: 'Montserrat-Light', sans-serif;
+    width: 100%;
+    overflow: hidden;
+}
+img {
+    max-width: 100%;
+  }
+
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-weight: 500;
+  color: hsl(0, 0%, 28%);
+  font-family: 'Montserrat-Light', sans-serif;
+}
+p{
+  line-height: 1.7;
+  font-family: 'Montserrat-Light', sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.slogan{
+   background: url("../../assets/images/lola.jpg") no-repeat center ;
+   background-size: cover;
+   padding: 2em;
+   height: 20%;
+}
+
+.slogan__inner{
+   padding:1.5em;
+   background-color:  hsla(93, 0%, 80%,0.5);
+}
+.slogan__inner h1 {
+  letter-spacing: 0.05em;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+
+}
+
+.slogan__inner h1 span {
+  color: black;
+}
+
+.slogan__inner a {
+  display: block;
+  color: #fff;
+  background-color: hsl(109.6, 48.1%, 53.1%);
+  margin: 2em;
+  margin-bottom: 1em;
+  border: 1px solid hsl(109.6, 48.1%, 53.1%);
+  padding: 0.5em;
+  font-size: 16px
+  
+}
+
+.slogan__inner a:hover , .slogan__inner a:focus {
+  color: #fff;
+  background-color: hsl(47.9, 93.3%, 53.1%);
+  border: 1px solid hsl(47.9, 93.3%, 53.1%);
+
+}
+
+.howItWorks{
+  padding: 2.0em 1.5em;
+
+}
+
+.howItWorks > h1 {
+  font-size: 22px;
+}
+
+.work_card{
+  padding: 0.5em;
+}
+
+.work_card + .work_card {
+  margin-top: 1em;
+}
+.work_card > img{
+  display: block;
+  width: 10em;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto
+}
+.work_card > h2 {
+  margin-top: 1em;  
+  color: hsl(0, 0%, 34%);
+  text-transform: capitalize;
+  letter-spacing: 0.06em;
+  font-family: 'Montserrat-Light', sans-serif;
+  font-size: 18px;
+}
+.work_card > p {
+  margin-top: 1em;
+  color: hsl(0, 0%, 34%);
+  font-size: 16px;
+}
+
+.featuredMenu{
+  padding: 0 1em;
+}
+
+.slider {
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  
+}
+
+
+
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.slider > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: hsl(109.6, 48.1%, 53.1%);
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+
+.slider > a + a {
+  margin-left: 0.5em;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
+}
+
+.menu_card {
+  flex-shrink: 0; 
+  width: 80%;
+  height: auto;
+  margin-right: 30px;
+  background: #fff;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  justify-content: center;
+  align-items: center;
+}
+.menu_card img {
+  width:fit-content;
+  height: auto;
+}
+
+.howWePrepareMeals {
+  background: url("../../assets/images/video-bg.jpg") no-repeat center ;
+  background-size: auto 120%;
+  margin: 4em 0;
+
+}
+
+.howWePrepareMeals > a {
+  display: block;
+  background-color:  hsla(93, 9%, 10%,0.7);
+  padding: 5em 2em;
+}
+
+.howWePrepareMeals > a > img {
+  display: block;
+  margin: 2em auto;
+  width: 4em;
+  height: auto;
+}
+
+.howWePrepareMeals > a > h2 {
+  color: #fff;
+}
+
+.menuCategories{
+  margin-top: 0em;
+  padding: 2em;
+}
+
+
+.menuCategories > h4 {
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+
+.menu_grid{
+  display: grid; 
+  grid-template-areas: "col1 col2"
+                       "col3 col4"
+                       "col5 col6"
+                       "col7 col8";
+  grid-template-columns: 48% 46%;
+  grid-template-rows: 2fr;
+  grid-gap: 2em;
+
+
+  margin: 0 auto;
+}
+
+
+.menu_grid > #col1 {
+  grid-area: col1;
+  background: url("../../assets/images/breakfast.jpeg") no-repeat center ;
+  background-color: hsla(93, 10%, 10%,0.4);
+  background-blend-mode: soft-light;
+  background-size: 100% 100%;
+  
+  
+}
+
+.menu_grid > #col2 {
+  grid-area: col2;
+  background: url("../../assets/images/dessert.jpg") no-repeat center ;
+  background-color: hsla(93, 10%, 10%,0.3);
+  background-blend-mode: soft-light;
+  background-size: 100% 100%;
+}
+
+
+.menu_grid > #col3 {
+  grid-area: col3;
+  background: url("../../assets/images/dinner.jpeg") no-repeat center ;
+  background-color: hsla(93, 10%, 10%,0.3);
+  background-blend-mode: soft-light;
+  background-size: 100% 100%;
+}
+
+.menu_grid > #col4 {
+  grid-area: col4;
+  background: url("../../assets/images/meat.jpeg") no-repeat center ;
+  background-color: hsla(93, 10%, 10%,0.4);
+  background-blend-mode: soft-light;
+  background-size: 100% 100%;
+}
+
+.menu_grid > #col5 {
+  grid-area: col5;
+  background: url("../../assets/images/snacks.jpg") no-repeat center ;
+  background-color: hsla(93, 10%, 10%,0.4);
+  background-blend-mode: soft-light;
+  background-size: 100% 100%;
+}
+
+.menu_grid > #col6 {
+  grid-area: col6;
+  background: url("../../assets/images/salad.jpg") no-repeat center ;
+  background-color: hsla(93, 10%, 10%,0.4);
+  background-blend-mode: soft-light;
+  background-size: 100% 100%;
+}
+
+.menu_grid > #col7 {
+  grid-area: col7;
+  background: url("../../assets/images/soup.jpg") no-repeat center ;
+  background-color: hsla(93, 10%, 10%,0.4);
+  background-blend-mode: soft-light;
+  background-size: 100% 100%;
+}
+
+.menu_grid > #col8 {
+  grid-area: col8;
+  background: url("../../assets/images/drinks.jpg") no-repeat center ;
+  background-color: hsla(93, 10%, 10%,0.4);
+  background-blend-mode: soft-light;
+  background-size: 100% 100%;
+}
+
+.menu_grid_card {
+  padding: 7em 3em;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.menu_grid_card span{
+  text-transform: uppercase;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.ourTeam{
+  padding: 2em;
+}
+
+.ourTeam > h1 {
+  font-size: 22px;
+  line-height: 1.5;  
+  letter-spacing: 0.05em;
+  margin-bottom: 0;
+  color:  hsl(0, 0%, 28%);
+}
+.ourTeam > p {
+  color:  hsl(0, 0%, 28%);
+  margin-bottom: 3em;
+  font-size: 16px
+}
+
+.ourTeam > div > a + a {
+  margin-top: 3em;
+}
+
+.teamCard {
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.teamCard > figure {
+  width: 14em;
+  height:14em;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid hsl(109.6, 48.1%, 53.1%);
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.teamCard > h1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+
+}
+
+.teamCard > p {
+  font-size: 15px;
+}
+.center_item{
+  text-align: center;
+}
+
+.text-sp {
+  letter-spacing: 0.05em;
+}
+.text-lt {
+  font-family: "Montserrat-Light", sans-serif;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}

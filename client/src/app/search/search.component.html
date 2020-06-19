@@ -1,0 +1,5 @@
+<div>
+    <h1 class="center-item capitalize">{{title$ | async}} </h1>
+    <div *ngIf="loading"></div>
+    <app-meal-list *ngIf="!loading" [meals]="meals"></app-meal-list>
+</div>

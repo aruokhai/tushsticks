@@ -1,0 +1,141 @@
+.menu {
+    margin: 1em 0 0;
+   }
+   
+   .menu_slogan{
+       background: url(../../assets/images/menu.jpg) no-repeat center;
+       background-size: cover;
+       background-position: left;
+       padding: 1em 0;
+   }
+   
+   .menu_slogan__inner{
+       background-color: hsla(0, 0%, 90%, 0.5);
+       padding: 1em;
+   }
+   
+   .menu_categories{
+    padding: 2em;
+    padding-bottom: 0.5em;
+   }
+   .menu_categories ul {
+       list-style: none;
+       padding-left: 0;
+       border: 1px solid hsl(0,0%,80%);;
+   
+   }
+   
+   .menu_categories a {
+       display: block;
+       padding: 0.8em 2em;
+   }
+   .menu_categories li:first-child a{
+       background-color: hsl(109.6, 48.1%, 53.1%);
+       color: #fff;
+   }
+   
+   .menu_categories a:hover {
+       background-color: hsl(109.6, 48.1%, 53.1%);
+       color: #fff;
+   }
+   
+   .menu_categories  li + li {
+       border-top: 1px solid hsl(0,0%,80%);
+   
+   }
+   
+   .menu_ingredients {
+       padding: 2em;
+       padding-top: 0;
+   }
+   
+   .menu_ingredients > h3 {
+       font-weight: 400;
+       padding-bottom: 1em;    
+       border-bottom: 1px solid hsl(0,0%,80%);
+   }
+   .menu_ingredients > div {
+       display: flex;
+       flex-wrap: wrap;
+       
+   }
+   
+   .menu_ingredients > div a {
+       border: 1px solid hsl(0,0%,80%);
+       padding: 0.7em;
+       font-size: 0.7em;
+       flex: none;
+       margin-right: 1em;
+       margin-bottom: 1em;
+       
+   }
+   
+   .menu_ingredients > div a:first-child{
+       background-color: hsl(109.6, 48.1%, 53.1%);
+       color: #fff;
+   }
+   
+   .menu_ingredients > div a:hover{
+       background-color: hsl(109.6, 48.1%, 53.1%);
+       color: #fff;
+   }
+   
+   .featured_products {
+       padding: 2em;
+       padding-top: 0;                         
+   }
+   .featured_card {
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+   }
+   
+   .featured_card img {
+       width: 8em;
+       height: 5em;
+       padding-right: 1em;
+   }
+   
+   .featured_card__text {
+        flex: none;
+        
+   }
+   
+   .menu_meals{
+       padding:2em;
+       padding-top: 0;
+   }
+   
+   
+   
+   #menu_paginator {
+   
+   }
+   
+   #menu_paginator > ul {
+       display: flex;
+       justify-content: center;
+       list-style: none;
+   }
+   
+    #menu_paginator > ul > li {
+       padding: 0.8em 1.5em;
+       border: 1px solid  hsl(0, 0%, 80.8%); ;
+       margin-right: 1em;
+    }
+   
+    #menu_paginator > ul > li:first-child{
+       border-color:  hsl(121.3, 39.5%, 55.3%)
+   }
+   
+   #menu_paginator > ul > li:last-child{
+       border: none;
+   }
+   #menu_paginator > ul > li:last-child a img{
+       width: 1em;
+       height: auto;
+   }
+   
+   .center_item{
+       text-align: center;
+   }

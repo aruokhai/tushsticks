@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+html {
+    box-sizing: border-box;
+    width:100%;
+    color: hsl(0, 0%, 45.9%);
+
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+body{
+    line-height: 1.4;
+    margin: 0;
+    
+}
+
+main{
+    display: block;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

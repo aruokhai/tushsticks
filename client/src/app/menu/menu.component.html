@@ -1,0 +1,90 @@
+<div class="menu">
+        <div class="menu_slogan">
+          <div class="menu_slogan__inner">
+            <h2 class="center_item">
+                OUR DELICIOUS MENU
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                , sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+            </p>
+          </div>
+        </div>
+        <div class="menu_categories">
+          <h2>CATEGORIES</h2>
+          <ul>
+            <li>
+                <a (click)="getAllMeals">All Categories</a>
+            </li>
+            <li>
+                <a (click)="getMeals('breakfast')">Breakfast</a>
+            </li>
+            <li>
+                <a (click)="getMeals('dessert')">Dessert</a>
+      
+            </li>
+            <li>
+                <a (click)="getMeals('soups')">Soups</a>
+            </li>
+            <li>
+                <a (click)="getMeals('meat&fish')">Meat & Fish</a>
+            </li>
+            <li>
+                <a (click)="getMeals('lunch')">Lunch</a>
+            </li>
+            <li>
+                <a (click)="getMeals('salad')">salad</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu_ingredients">
+            <h3>INGREDIENTS</h3>
+            <div>
+            <a>ALL TAGS</a>
+            <a>BOILED</a>
+            <a>FRUITS</a>
+            <a>GLUTTEN-FREE</a>
+            <a>LOW-FAT</a>
+            <a>OIL-FREE</a>
+          </div>
+        </div>
+        <!-- ToDo -->
+       <!--  <div class="featured_products">
+              <h3>FEATURED PRODUCTS</h3>
+              <a class="featured_card">
+                <img src="assets/images/featured_card1.jpg">
+                <div class="featured_card__text">
+                    <h4>Tomato omelete</h4>
+                    <h4>$15.99</h4>
+                </div>
+              </a>
+              <a class="featured_card">
+                  <img src="assets/images/featured_card2.jpg">
+                  <div class="featured_card__text">
+                      <h4>Vegetable salad</h4>
+                      <h4>$15.99</h4>
+                  </div>
+                </a>
+        </div> -->
+        <div class="menu_meals">
+              <app-menu-card [meal]="meal" *ngFor=" let meal of meals$ | async"></app-menu-card>       
+        </div>
+        <div id="menu_paginator">
+            <ul>
+                <li>
+                  <span>
+                      1
+                  </span>
+                </li>
+                <li>
+                  <a>
+                      2
+                  </a>
+                </li>
+                <li>
+                    <a><img src="assets/images/event-next.png"></a>
+                </li>
+            </ul>
+            
+        </div>
+      </div>

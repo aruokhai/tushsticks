@@ -1,0 +1,63 @@
+header{
+    display: block;
+    font-size: 10px;
+    margin:0;
+    margin-bottom: 1em;
+    padding-top: 1.3em;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0.6em 0;
+    padding-right: 0.6em;
+}
+
+.header__inner div:first-child{
+    padding-left: 1.5em;
+}
+
+
+.brand_image{
+    height: auto;
+    width: 14em;
+    margin-top: -0.3
+}
+
+.cart{
+    margin-top: 1em ;
+    color: #fff;
+
+}
+
+.cart a {
+    display: flex;
+    border: 1px solid hsl(109.6, 48.1%, 53.1%);
+    border-radius: 2.5em;
+    color: hsl(109.6, 48.1%, 53.1%);
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.cart a:hover , .cart a:focus{
+    background-color:  hsl(109.6, 48.1%, 53.1%);
+    color: #fff;
+}
+
+.cart a p {
+    font-weight: 500;
+    font-size: 14px;
+    color: #000
+}
+
+#cart_icon{
+    width: 0.5em;
+    height: auto;
+    margin-right: 0.5em;
+}
+.center_item{
+    text-align: center;
+}

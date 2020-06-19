@@ -1,0 +1,18 @@
+.meal_list {
+    padding: 1em;
+}
+
+.meal_grid{
+    display: grid;
+    grid-template-columns: 48% 46%;
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+
+}
+
+
+
+.center_item{
+    text-align: center;
+  }
+  

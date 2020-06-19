@@ -1,0 +1,36 @@
+.about {
+    margin: 1em 0 0;
+}
+
+figure{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.about_img {
+    display: block;
+    position: relative;
+    width: 157%;
+    height: auto;
+    left: -20%;
+    
+}
+
+.about_main {
+    padding: 1em;
+}
+
+.about_main a {
+    display: block;
+    width: fit-content;
+    padding: 1em;
+    background-color: hsl(121.3, 39.5%, 55.3%);
+    margin-left: auto;
+    margin-right: auto; 
+    
+}
+
+.center_item{
+    text-align: center;
+}
