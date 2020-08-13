@@ -6,6 +6,7 @@ import { AboutComponent } from './about/about.component';
 import { SearchComponent } from './search/search.component';
 import { MealsResolverService } from './services/meals-resolver.service';
 import { GetAllMealsResolverService } from './services/get-all-meals-resolver.service';
+import { PlaceOrderComponent } from './place-order/place-order.component';
 
 
 const routes: Routes = [
@@ -16,13 +17,14 @@ const routes: Routes = [
     {
       path: 'search/:tags',
       component : SearchComponent , resolve: {meals: MealsResolverService}
-    }
+    },
+    {path: 'checkout', component: PlaceOrderComponent}
 
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

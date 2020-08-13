@@ -222,21 +222,18 @@ p{
   grid-template-areas: "col1 col2"
                        "col3 col4"
                        "col5 col6"
-                       "col7 col8";
-  grid-template-columns: 48% 46%;
-  grid-template-rows: 2fr;
-  grid-gap: 2em;
-
-
+                       "col7 col8"; 
+  grid-template-columns: 47% 47%;
+  grid-template-rows: 15em 15em 15em 15em;
+  column-gap: 6%;
+  row-gap: 2em;
   margin: 0 auto;
 }
 
 
 .menu_grid > #col1 {
   grid-area: col1;
-  background: url("../../assets/images/breakfast.jpeg") no-repeat center ;
-  background-color: hsla(93, 10%, 10%,0.4);
-  background-blend-mode: soft-light;
+  background: linear-gradient(hsla(93, 10%, 10%,0.4), hsla(93, 10%, 10%,0.4)), url("../../assets/images/breakfast.jpeg") no-repeat center;
   background-size: 100% 100%;
   
   
@@ -244,74 +241,62 @@ p{
 
 .menu_grid > #col2 {
   grid-area: col2;
-  background: url("../../assets/images/dessert.jpg") no-repeat center ;
-  background-color: hsla(93, 10%, 10%,0.3);
-  background-blend-mode: soft-light;
+  background: linear-gradient(hsla(93, 10%, 10%,0.4), hsla(93, 10%, 10%,0.4)), url("../../assets/images/dessert.jpg")  no-repeat center ;
   background-size: 100% 100%;
 }
 
 
 .menu_grid > #col3 {
   grid-area: col3;
-  background: url("../../assets/images/dinner.jpeg") no-repeat center ;
-  background-color: hsla(93, 10%, 10%,0.3);
-  background-blend-mode: soft-light;
+  background: linear-gradient(hsla(93, 10%, 10%,0.4), hsla(93, 10%, 10%,0.4)), url("../../assets/images/dinner.jpeg") no-repeat center ;
   background-size: 100% 100%;
 }
 
 .menu_grid > #col4 {
   grid-area: col4;
-  background: url("../../assets/images/meat.jpeg") no-repeat center ;
-  background-color: hsla(93, 10%, 10%,0.4);
-  background-blend-mode: soft-light;
+  background: linear-gradient(hsla(93, 10%, 10%,0.4), hsla(93, 10%, 10%,0.4)), url("../../assets/images/meat.jpeg") no-repeat center ;
   background-size: 100% 100%;
 }
 
 .menu_grid > #col5 {
-  grid-area: col5;
-  background: url("../../assets/images/snacks.jpg") no-repeat center ;
-  background-color: hsla(93, 10%, 10%,0.4);
-  background-blend-mode: soft-light;
+  grid-area: col5; 
+  background: linear-gradient(hsla(93, 10%, 10%,0.4), hsla(93, 10%, 10%,0.4)), url("../../assets/images/snacks.jpg") no-repeat center ;
   background-size: 100% 100%;
 }
 
 .menu_grid > #col6 {
   grid-area: col6;
-  background: url("../../assets/images/salad.jpg") no-repeat center ;
-  background-color: hsla(93, 10%, 10%,0.4);
-  background-blend-mode: soft-light;
+  background: linear-gradient(hsla(93, 10%, 10%,0.4), hsla(93, 10%, 10%,0.4)), url("../../assets/images/salad.jpg") no-repeat center ;
   background-size: 100% 100%;
 }
 
 .menu_grid > #col7 {
   grid-area: col7;
-  background: url("../../assets/images/soup.jpg") no-repeat center ;
-  background-color: hsla(93, 10%, 10%,0.4);
-  background-blend-mode: soft-light;
+  background : linear-gradient(hsla(93, 10%, 10%,0.4), hsla(93, 10%, 10%,0.4)), url("../../assets/images/soup.jpg") no-repeat center ;
   background-size: 100% 100%;
 }
 
 .menu_grid > #col8 {
   grid-area: col8;
-  background: url("../../assets/images/drinks.jpg") no-repeat center ;
-  background-color: hsla(93, 10%, 10%,0.4);
-  background-blend-mode: soft-light;
+  background: linear-gradient(hsla(93, 10%, 10%,0.4), hsla(93, 10%, 10%,0.4)), url("../../assets/images/drinks.jpg") no-repeat center ;
   background-size: 100% 100%;
 }
 
 .menu_grid_card {
-  padding: 7em 3em;
+  padding: 7em 2em;
   border-radius: 5px;
   color: #fff;
   text-decoration: none;
+  word-wrap: break-word;
 }
 
 
 .menu_grid_card span{
   text-transform: uppercase;
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
+ 
 }
 
 .ourTeam{

@@ -1,0 +1,20 @@
+<div>
+    <div *ngIf="isCartEmpty()"></div>
+    <div *ngIf="!isCartEmpty()">
+        <div>
+            <div>
+                <p>1</p>
+                <p>Shopping Cart</p>
+            </div>
+            <div>
+                <p>2</p>
+                <p>Checkout</p>
+            </div>
+            <div>
+                <p>3</p>
+                <p>Order Complete</p>
+            </div>
+            <router-outlet></router-outlet>
+      </div>
+    </div>
+</div>

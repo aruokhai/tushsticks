@@ -1,0 +1,4 @@
+runtime: nodejs10
+env_variables: 
+  DB_HOST: "mongodb+srv://tushsticks:rachael@cluster0-3spyn.gcp.mongodb.net/"
+  DEVELOPMENT: false

@@ -6,7 +6,8 @@ const resolvers = require('./resolvers')
 const Mongoose = require('mongoose')
 const {Meal} = require('./models/meal')
 const {Order} = require('./models/order')
-
+const compression = require('compression');
+const {join} = require('path');
 
 // The ApolloServer constructor requires two parameters: your schema
 // definition and your set of resolvers.
@@ -15,11 +16,13 @@ require('dotenv').config()
 
 async function start() { 
   const MONGO_DB = process.env.DB_HOST
+  const DIST_FOLDER = join(process.cwd(),'dist/client');
+  const PORT = process.env.PORT || 4000;
   console.log(MONGO_DB);
   let app;
   let server;
   try {
-    await Mongoose.connect(MONGO_DB, { useUnifiedTopology: true })
+    await Mongoose.connect(MONGO_DB,{dbName: 'tushsticks', useNewUrlParser: true});
     let db = {Meal, Order}
     server = new ApolloServer({ 
       typeDefs,
@@ -37,16 +40,25 @@ async function start() {
     console.log(error)
     process.exit(1)
   }
+  //app.use(compression);
+  
+  app.get('*.*',express.static(DIST_FOLDER, {
+    maxAge: '1d'
+  }));
 
-  app.get('/', (req, res) => {
-      res.send("hello world");
-    })
+  app.get('/', (req,res) => {
+    res.sendFile(join(DIST_FOLDER,'index.html'))
+  }
+   );
 
-
+   app.get('/*', (req,res) => {
+    res.sendFile(join(DIST_FOLDER,'index.html'))
+  }
+   )
 
   // The `listen` method launches a web server.
-  app.listen({port: 4000}, () => {
-    console.log(`🚀  Server ready at http://localhost:4000${server.graphqlPath}`);
+  app.listen(PORT, () => {
+    console.log(`🚀  Server ready at http://localhost:${PORT}${server.graphqlPath}`);
   })
 
 }

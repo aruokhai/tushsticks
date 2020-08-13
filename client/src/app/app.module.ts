@@ -22,6 +22,10 @@ import { MealCardComponent } from './meal-card/meal-card.component';
 import { MealService } from './services/meal.service';
 import { MenuCardComponent } from './menu-card/menu-card.component';
 import { GetMealsByTagsService } from './queries/get-meals-by-tags.service';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { ShoppingaCartComponent } from './shoppinga-cart/shoppinga-cart.component';
+import { OrderCompleteComponent } from './order-complete/order-complete.component';
+import { PlaceOrderComponent } from './place-order/place-order.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +40,10 @@ import { GetMealsByTagsService } from './queries/get-meals-by-tags.service';
     SearchComponent,
     MealCardComponent,
     MenuCardComponent,
+    CheckoutComponent,
+    ShoppingaCartComponent,
+    OrderCompleteComponent,
+    PlaceOrderComponent,
    
   ],
   imports: [

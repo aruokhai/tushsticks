@@ -11,6 +11,7 @@ export class HeaderComponent implements OnInit , OnDestroy{
   public menu: boolean;
   private menuChange$ : Observable<void>;
   private menuChangeSub: Subscription;
+  @Input() public openCheckout: Function;
   constructor() { 
     this.menu = false;
   }
@@ -18,6 +19,7 @@ export class HeaderComponent implements OnInit , OnDestroy{
   ngOnInit(): void {
     this.menuChange$ = merge(this.snav.openedStart,this.snav.closedStart);
     this.menuChangeSub = this.menuChange$.subscribe(() => {this.changeMenu()}); 
+    console.log(this.openCheckout);
     
   }
  
@@ -37,6 +39,10 @@ export class HeaderComponent implements OnInit , OnDestroy{
   changeMenuIcon(){
     this.snav.toggle();
    
+  }
+
+  checkout(){
+    this.openCheckout();
   }
 
 }

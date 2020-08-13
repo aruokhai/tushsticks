@@ -12,7 +12,7 @@ export class GetAllMealsResolverService {
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot):
   Observable<Meal[]> {
     let tags: string = route.paramMap.get('tags');
-    return this.mealService.getAllMeals();
+    return this.mealService.getMealsByTags(['breakfast']);
     
   }
 }
