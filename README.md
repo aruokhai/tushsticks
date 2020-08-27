@@ -15,5 +15,4 @@
 3. GOOGLE CLOUD INTEGERATED
 4. MONGO ATLAS INTEGRATED
  
-
 ### Link at [Demo Link](http://tushsticks.rj.r.appspot.com/)
